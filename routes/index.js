@@ -7,6 +7,9 @@ var orders = []
 router.get('/', function(req, res, next) {
   res.render('index', {orders});
 });
+router.get('/main', function(req, res, next) {
+  res.render('main', {});
+});
 
  router.get('/form', function(req, res, next) {
  	//console.log(req.query)
